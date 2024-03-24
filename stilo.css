@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&amp;family=Bebas+Neue&amp;family=Montserrat:wght@300&amp;family=Poppins:wght@500&amp;family=Rethink+Sans:wght@500&amp;family=Roboto:wght@300;400&amp;display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: radial-gradient(circle at center, #ff6f61, #ff4b2b);
+    text-align: center;
+    color: #fff;
+}
+
+.container {
+    margin: 30px auto;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    padding: 50px;
+    background-color: #fafafa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.botao {
+    display: inline-block;
+}
+
+.botao img {
+    width: 100%;
+    max-width: 400px; /* Ajuste o valor conforme necessÃ¡rio */
+    transition: transform 0.5s ease-in-out;
+    animation: pulse infinite alternate 0.7s;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1.0);
+    }
+
+    to {
+        transform: scale(1.05);
+    }
+}
+
+.imagens img {
+    display: inline-block;
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: #333;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .header {
+        font-size: 20px;
+    }
+
+    .botao img {
+        max-width: 250px;
+    }
+
+    .imagens img {
+        max-width: 120px;
+    }
+}
